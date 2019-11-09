@@ -18,7 +18,7 @@
     "browser-request": "0.3.3",
     "events": "1.1.0",
     "konva": "0.11.1",
-    "lodash": "4.2.0",
+    "lodash": "4.17.13",
     "react": "0.14.3",
     "react-dom": "0.14.3",
     "react-konva": "0.6.1"
