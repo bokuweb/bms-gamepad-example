@@ -1,0 +1,58 @@
+{
+  "name": "bmsjs-ithildin",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "npm run build && npm run connect ",
+    "connect": "node server.js",
+    "watch": "npm run watch:js & npm run watch:stylus & npm run connect",
+    "build": "npm run build:js & npm run build:stylus",
+    "watch:stylus": "stylus styl/ --watch  --out stylesheets/",
+    "build:stylus": "stylus styl/ --out stylesheets/",
+    "watch:js": "watchify --extension=js -o dist/main.js src/main.js",
+    "build:js": "browserify --extension=js -o dist/main.js src/main.js",
+    "test": "karma start"
+  },
+  "dependencies": {
+    "@bokuweb/bms2js": "0.0.2",
+    "browser-request": "0.3.3",
+    "events": "1.1.0",
+    "konva": "0.11.1",
+    "lodash": "4.2.0",
+    "react": "0.14.3",
+    "react-dom": "0.14.3",
+    "react-konva": "0.6.1"
+  },
+  "devDependencies": {
+    "babel": "6.3.26",
+    "babel-cli": "6.4.5",
+    "babel-plugin-espower": "2.0.0",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-react": "6.3.13",
+    "babel-preset-stage-0": "6.3.13",
+    "babelify": "7.2.0",
+    "browser-sync": "2.9.11",
+    "browserify": "9.0.8",
+    "connect": "3.4.0",
+    "espower-babel": "3.3.0",
+    "espower-loader": "1.0.0",
+    "espowerify": "1.0.0",
+    "intelli-espower-loader": "1.0.0",
+    "karma": "0.13.11",
+    "karma-browserify": "4.4.0",
+    "karma-chrome-launcher": "0.2.1",
+    "karma-cli": "0.1.1",
+    "karma-mocha": "0.2.0",
+    "mocha": "2.3.3",
+    "power-assert": "1.1.0",
+    "serve-static": "1.10.0",
+    "sinon": "1.17.1",
+    "stylus": "0.52.4",
+    "watchify": "3.4.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
