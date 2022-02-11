@@ -37,7 +37,7 @@
     "espower-loader": "1.0.0",
     "espowerify": "1.0.0",
     "intelli-espower-loader": "1.0.0",
-    "karma": "0.13.11",
+    "karma": "6.3.14",
     "karma-browserify": "4.4.0",
     "karma-chrome-launcher": "0.2.1",
     "karma-cli": "0.1.1",
